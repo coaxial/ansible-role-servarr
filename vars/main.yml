@@ -1,2 +1,5 @@
 ---
-# vars file for servarr
+nzbget__use_nginx: "{{ servarr__use_nginx }}"
+radarr__use_nginx: "{{ servarr__use_nginx }}"
+sonarr__use_nginx: "{{ servarr__use_nginx }}"
+transmission__use_nginx: "{{ servarr__use_nginx }}"

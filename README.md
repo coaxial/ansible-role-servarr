@@ -6,6 +6,6 @@ Galaxy: https://galaxy.ansible.com/coaxial/servarr
 
 ## Variables and their defaults
 
-| variable name  | default value | description |
-| -------------- | ------------- | ----------- |
-| `servarr_myvar` | `default`     | Description |
+| variable name       | default value | description                                             |
+| ------------------- | ------------- | ------------------------------------------------------- |
+| `servarr_use_nginx` | `yes`         | Whether to install and configure nginx for all services |
