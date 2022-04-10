@@ -1,2 +1,2 @@
 ---
-# defaults file for myrole
+servarr__use_nginx: yes
