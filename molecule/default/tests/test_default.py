@@ -15,7 +15,7 @@ def test_transmission(host):
 
 def test_nzbget(host):
     h = host.run(
-        'curl http://nzbget:tegbzn6789@localhost/nzbget'
+        'curl -L http://nzbget:tegbzn6789@localhost/nzbget'
     ).stdout
 
     assert 'NZBGet' in h
