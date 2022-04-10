@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: "Include coaxial.myrole"
+    - name: "Include coaxial.servarr"
       ansible.builtin.include_role:
-        name: "coaxial.myrole"
+        name: "coaxial.servarr"
