@@ -4,3 +4,6 @@ roles:
   - name: coaxial.radarr
   - name: coaxial.nzbget
   - name: coaxial.transmission
+    # FIXME: Remove once
+    # https://github.com/nginxinc/ansible-role-nginx/issues/507 is resolved
+  - name: nginxinc.nginx
