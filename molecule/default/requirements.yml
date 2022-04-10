@@ -1,0 +1,6 @@
+---
+roles:
+  - name: coaxial.sonarr
+  - name: coaxial.radarr
+  - name: coaxial.nzbget
+  - name: coaxial.transmission
