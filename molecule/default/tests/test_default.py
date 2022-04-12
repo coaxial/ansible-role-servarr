@@ -8,7 +8,8 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 def test_transmission(host):
     h = host.run(
-        'curl http://transmission:transmission@localhost/transmission').stdout
+        'curl -L http://transmission:transmission@localhost/transmission'
+    ).stdout
 
     'Transmission' in h
 
@@ -23,7 +24,7 @@ def test_nzbget(host):
 
 def test_sonarr(host):
     h = host.run(
-        'curl http://localhost/sonarr'
+        'curl -L http://localhost/sonarr'
     ).stdout
 
     'Sonarr' in h
@@ -31,7 +32,7 @@ def test_sonarr(host):
 
 def test_radarr(host):
     h = host.run(
-        'curl http://localhost/radarr'
+        'curl -L http://localhost/radarr'
     ).stdout
 
     'Radarr' in h
